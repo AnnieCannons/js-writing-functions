@@ -119,7 +119,7 @@ let age = todaysYear - Number(question);
 console.log('Your approximate age is ' + age + '.' );
 }
 
-// myFunction3();
+//myFunction3();
 // Execute the function. Feel free to comment it out once you've confirmed it works.
 
 
