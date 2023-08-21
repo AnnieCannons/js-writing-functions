@@ -4,6 +4,7 @@
 // Identify as many different pieces of functionality that likely use functions.
 
 // List the functions here:
+"Clicking on any of the buttons or words like settings, a function has been defined and is being called each click the user makes"
 
 /*********************** Exercise 2 ********************* */
 // Fix each function's syntax so that it will correctly run the code in the code block.
@@ -14,17 +15,18 @@
 // 2. Fix the function so that it no longer gives you an error.
 // 3. Repeat.
 
-// let function  = sayHello() {
-//     alert("Hello");
-// }
+function sayHello() {
+    alert("Hello");
+}
 
-// function sayHello (
-//   alert("Hello");
-// )
+function sayHello() {
+    alert("Hello");
+}
+  
 
-// function sayHello {
-//     alert("Hello");
-// }
+function sayHello () {
+    alert("Hello");
+}
 
 /*********************** Exercise 3 ********************* */
 // Call the following function so that a random number is alerted in the browser.
