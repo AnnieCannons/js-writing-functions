@@ -14,16 +14,17 @@
 // 2. Fix the function so that it no longer gives you an error.
 // 3. Repeat.
 
-// let function  = sayHello() {
-//     alert("Hello");
+//  function sayHello() {
+    // alert("Hello");
+// }
+// sayHello()
+
+// function sayHello (){
+  // alert("Hello");
 // }
 
-// function sayHello (
-//   alert("Hello");
-// )
-
-// function sayHello {
-//     alert("Hello");
+// function sayHello() {
+    // alert("Hello");
 // }
 
 /*********************** Exercise 3 ********************* */
@@ -35,12 +36,16 @@ function alertRandom() {
   let randomNumber = Math.floor(Math.random() * 6) + 1;
   alert(randomNumber);
 }
-
+// alertRandom()
 /*********************** Exercise 4 ********************* */
 
 // Declare a function that prompts the user's for their favorite drink and logs the following phrase to the console. "Your favorite drink is ________."
 
-
+function favDrinkData() {
+ let answer = prompt( "Your Favorite Drink is" )
+ console.log(answer)
+}
+// favDrinkData()
 
 
 // Execute the function so that you see "Your favorite drink is [whatever you typed in the prompt]." in the console.
@@ -60,10 +65,14 @@ let user = {
 // Declare a function that creates an alert that says, "Welcome, Trinity! You know JavaScript, Python, and Ruby."
 // Make sure not to use the literal string "Trinity" or the words in the `languages` array.
 
+function Welcome (){
+  alert(user.fullName.slice(0,8)+ "!  You know " + user.languages +".")
 
+  console.log(Welcome)
+}
 // Execute the function.
 
-
+Welcome()
 
 // Below, NOT in a function, change the object's properties in these ways:
 // 1. The name should be "Kristal Thomas".
