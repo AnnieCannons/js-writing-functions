@@ -4,6 +4,9 @@
 // Identify as many different pieces of functionality that likely use functions.
 
 // List the functions here:
+//loading user info
+//loading the repositories 
+//
 
 /*********************** Exercise 2 ********************* */
 // Fix each function's syntax so that it will correctly run the code in the code block.
@@ -14,34 +17,40 @@
 // 2. Fix the function so that it no longer gives you an error.
 // 3. Repeat.
 
-// let function  = sayHello() {
-//     alert("Hello");
-// }
+//function sayHello() {
+//    alert("Hello");
+//}
 
-// function sayHello (
-//   alert("Hello");
-// )
+//function sayHello() {
+//    alert("Hello");
+//}
 
-// function sayHello {
-//     alert("Hello");
-// }
+//function sayHello() {
+//    alert("Hello");
+//}
 
 /*********************** Exercise 3 ********************* */
 // Call the following function so that a random number is alerted in the browser.
 // If you don't want to keep getting alerts in this assignment,
 // then once you've confirmed it works, feel free to comment the function call.
 
-function alertRandom() {
-  let randomNumber = Math.floor(Math.random() * 6) + 1;
-  alert(randomNumber);
-}
+//function alertRandom() {
+  //let randomNumber = Math.ceil(Math.random() * 6);
+  //alert(randomNumber);
+//}
+
+//alertRandom();
 
 /*********************** Exercise 4 ********************* */
 
 // Declare a function that prompts the user's for their favorite drink and logs the following phrase to the console. "Your favorite drink is ________."
 
-
-
+//function favoriteDrinkQuestion() {
+  //const answer = prompt("What is your favorite drink");
+  //return answer;
+//};
+//const favoriteDrink = favoriteDrinkQuestion();
+//console.log("Your favorite drink is " + favoriteDrink);
 
 // Execute the function so that you see "Your favorite drink is [whatever you typed in the prompt]." in the console.
 // Feel free to comment out the execution line after you're done, so you don't keep getting prompted.
