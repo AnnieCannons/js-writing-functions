@@ -15,16 +15,16 @@
 // 2. Fix the function so that it no longer gives you an error.
 // 3. Repeat.
 
+
 function sayHello() {
     alert("Hello");
 }
 
 function sayHello() {
     alert("Hello");
-}
-  
+} 
 
-function sayHello () {
+function sayHello() {
     alert("Hello");
 }
 
@@ -37,13 +37,18 @@ function alertRandom() {
   let randomNumber = Math.floor(Math.random() * 6) + 1;
   alert(randomNumber);
 }
-alertRandom()
+alertRandom();
 
 /*********************** Exercise 4 ********************* */
 
 // Declare a function that prompts the user's for their favorite drink and logs the following phrase to the console. "Your favorite drink is ________."
 
+function alertDrink() {
+  let favoriteDrink = prompt("What is your favorite drink?");
+  return favoriteDrink;
+}
 
+console.log("Your favorite drink is " + alertDrink());
 
 
 // Execute the function so that you see "Your favorite drink is [whatever you typed in the prompt]." in the console.
