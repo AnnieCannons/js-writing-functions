@@ -5,6 +5,8 @@
 
 // List the functions here:
 
+//any clickable buttons, possibly any alerts, welcome messages
+
 /*********************** Exercise 2 ********************* */
 // Fix each function's syntax so that it will correctly run the code in the code block.
 
@@ -18,13 +20,21 @@
 //     alert("Hello");
 // }
 
+function sayHello() {alert("Hello")};
+
 // function sayHello (
 //   alert("Hello");
 // )
+function sayHello() {alert("Hello")};
 
 // function sayHello {
 //     alert("Hello");
 // }
+function sayHello() {alert("Hello")};
+
+//sayHello();
+
+
 
 /*********************** Exercise 3 ********************* */
 // Call the following function so that a random number is alerted in the browser.
@@ -35,10 +45,17 @@ function alertRandom() {
   let randomNumber = Math.floor(Math.random() * 6) + 1;
   alert(randomNumber);
 }
+//alertRandom();
 
 /*********************** Exercise 4 ********************* */
 
 // Declare a function that prompts the user's for their favorite drink and logs the following phrase to the console. "Your favorite drink is ________."
+
+function userFavoriteDrink() {let favoriteDrink = prompt("What is your favorite drink?"); 
+console.log("Your favorite drink is " + favoriteDrink);};
+
+//userFavoriteDrink();
+
 
 
 
@@ -60,6 +77,9 @@ let user = {
 // Declare a function that creates an alert that says, "Welcome, Trinity! You know JavaScript, Python, and Ruby."
 // Make sure not to use the literal string "Trinity" or the words in the `languages` array.
 
+function userWelcome() {alert("Welcome, " + user.fullName.slice(0, 7) + "! You know " + user.languages[0] + ", " + user.languages[1] + ", and " + user.languages[2] + ".")};
+
+//userWelcome();
 
 // Execute the function.
 
@@ -68,6 +88,11 @@ let user = {
 // Below, NOT in a function, change the object's properties in these ways:
 // 1. The name should be "Kristal Thomas".
 // 2. The second language should be `Racket`.
+
+user.fullName = "Kristal Thomas";
+user.languages[1] = "Racket";
+
+//userWelcome();
 
 
 // Execute the function again, and you should see a different message printed than the first time, with a different name and a different second language listed.
@@ -90,6 +115,14 @@ let todaysDate = new Date();
 let todaysYear = todaysDate.getFullYear();
 let age = todaysYear - Number(birthYear);
 
+function userAgeMessage() {birthYear = prompt("Enter year of birth."); 
+age = todaysYear - parseFloat(birthYear);
+alert("Your approximate age is " + age)};
+
+//userAgeMessage();
+
+
+
 
 // Execute the function. Feel free to comment it out once you've confirmed it works.
 
@@ -100,6 +133,12 @@ let age = todaysYear - Number(birthYear);
 // Declare a function that prompts the user for the following things: age, favoriteColor, favoriteYour.
 // Inside the function, create an object to store the user's responses.
 // Inside the function, log the following sentence to the console with the user's responses: "Your age is ____, your favorite color is ______, and your favorite movie is ______".
+
+let userAge;
+let favoriteColor;
+let favoriteMovie;
+
+//function userData(); 
 
 // Execute the function
 
