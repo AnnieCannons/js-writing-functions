@@ -102,9 +102,15 @@ let todaysDate = new Date();
 let todaysYear = todaysDate.getFullYear();
 let age = todaysYear - Number(birthYear);
 
+function userBirthYear() {
+  let UBYPrompt = prompt("Please enter your birth year.");
 
+  let age = todaysYear - Number(UBYPrompt);
+  console.log("Your approximate age is " + age);
+}
 // Execute the function. Feel free to comment it out once you've confirmed it works.
 
+userBirthYear()
 
 
 /*********************** Exercise 7 ********************* */
