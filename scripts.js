@@ -4,6 +4,7 @@
 // Identify as many different pieces of functionality that likely use functions.
 
 // List the functions here:
+"Clicking on any of the buttons or words like settings, a function has been defined and is being called each click the user makes"
 
 /*********************** Exercise 2 ********************* */
 // Fix each function's syntax so that it will correctly run the code in the code block.
@@ -14,17 +15,18 @@
 // 2. Fix the function so that it no longer gives you an error.
 // 3. Repeat.
 
-// let function  = sayHello() {
-//     alert("Hello");
-// }
 
-// function sayHello (
-//   alert("Hello");
-// )
+function sayHello() {
+    alert("Hello");
+}
 
-// function sayHello {
-//     alert("Hello");
-// }
+function sayHello() {
+    alert("Hello");
+} 
+
+function sayHello() {
+    alert("Hello");
+}
 
 /*********************** Exercise 3 ********************* */
 // Call the following function so that a random number is alerted in the browser.
@@ -35,18 +37,22 @@ function alertRandom() {
   let randomNumber = Math.floor(Math.random() * 6) + 1;
   alert(randomNumber);
 }
+alertRandom();
 
 /*********************** Exercise 4 ********************* */
 
 // Declare a function that prompts the user's for their favorite drink and logs the following phrase to the console. "Your favorite drink is ________."
 
+function alertDrink() {
+  let favoriteDrink = prompt("What is your favorite drink?");
+  return favoriteDrink;
+}
 
+console.log("Your favorite drink is " + alertDrink());
 
 
 // Execute the function so that you see "Your favorite drink is [whatever you typed in the prompt]." in the console.
 // Feel free to comment out the execution line after you're done, so you don't keep getting prompted.
-
-
 
 
 /*********************** Exercise 5 ********************* */
@@ -60,15 +66,21 @@ let user = {
 // Declare a function that creates an alert that says, "Welcome, Trinity! You know JavaScript, Python, and Ruby."
 // Make sure not to use the literal string "Trinity" or the words in the `languages` array.
 
-
+function welcomeUser(){
+  alert("Welcome " + user.fullName.slice(0,7) + "! You know " + user.languages[0] + ", " + user.languages[1] + ", and " + user.languages[2] + ".");
+}
 // Execute the function.
-
+console.log(welcomeUser())
 
 
 // Below, NOT in a function, change the object's properties in these ways:
 // 1. The name should be "Kristal Thomas".
 // 2. The second language should be `Racket`.
+user.fullName = "Kristal Thomas";
+console.log(user.fullName)
 
+user.languages[1] = "Racket";
+console.log(welcomeUser())
 
 // Execute the function again, and you should see a different message printed than the first time, with a different name and a different second language listed.
 
@@ -90,9 +102,15 @@ let todaysDate = new Date();
 let todaysYear = todaysDate.getFullYear();
 let age = todaysYear - Number(birthYear);
 
+function userBirthYear() {
+  let UBYPrompt = prompt("Please enter your birth year.");
 
+  let age = todaysYear - Number(UBYPrompt);
+  console.log("Your approximate age is " + age);
+}
 // Execute the function. Feel free to comment it out once you've confirmed it works.
 
+userBirthYear()
 
 
 /*********************** Exercise 7 ********************* */
