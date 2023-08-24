@@ -55,8 +55,6 @@ console.log("Your favorite drink is " + alertDrink());
 // Feel free to comment out the execution line after you're done, so you don't keep getting prompted.
 
 
-
-
 /*********************** Exercise 5 ********************* */
 
 let user = {
@@ -68,15 +66,21 @@ let user = {
 // Declare a function that creates an alert that says, "Welcome, Trinity! You know JavaScript, Python, and Ruby."
 // Make sure not to use the literal string "Trinity" or the words in the `languages` array.
 
-
+function welcomeUser(){
+  alert("Welcome " + user.fullName.slice(0,7) + "! You know " + user.languages[0] + ", " + user.languages[1] + ", and " + user.languages[2] + ".");
+}
 // Execute the function.
-
+console.log(welcomeUser())
 
 
 // Below, NOT in a function, change the object's properties in these ways:
 // 1. The name should be "Kristal Thomas".
 // 2. The second language should be `Racket`.
+user.fullName = "Kristal Thomas";
+console.log(user.fullName)
 
+user.languages[1] = "Racket";
+console.log(welcomeUser())
 
 // Execute the function again, and you should see a different message printed than the first time, with a different name and a different second language listed.
 
