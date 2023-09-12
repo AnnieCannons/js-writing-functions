@@ -1,0 +1,19 @@
+Exercise 1
+Please complete the first exercise
+
+Exercise 2 and 3 look great!
+
+Exercise 4
+The function is working great. Two pieces of feedback: 1) Do you need the text variable? and 2) You can use spaces and tabs to make the code block inside the function easier to read and identify for yourself and others reading the code. 
+
+Exercise 5
+Simliar to Exercise 4, it doesn't look like you need the text variable. Great work on changing the string and concatenating!
+
+Exercise 6
+You have declared age twice. Should that be within the function or outside the function?
+
+Exercise 7 - great!
+
+Exercise 8
+Can you explain the .map? Can you try refactoring the code without it?
+
