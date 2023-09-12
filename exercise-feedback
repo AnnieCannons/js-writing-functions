@@ -1,0 +1,14 @@
+Be sure to format your code so that you are indenting each of the function code blocks. Like this:
+function userFavoriteDrink() {
+     let favoriteDrink = prompt("What is your favorite drink?"); 
+}
+It will make your code easier to read and update.
+
+Exercises 1-4 look great!
+
+Exercise 5
+How would you make this function work if the object being used as a user with a shorter or longer name?
+
+Exercise 6 looks good!
+
+You can work on Exercises 7 and 8 if you would like more practice.
