@@ -1,5 +1,4 @@
 /*********************** Exercise 1 ********************* */
-
 // Navigate to your Github profile page
 // Identify as many different pieces of functionality that likely use functions.
 
@@ -39,13 +38,15 @@ function alertRandom() {
 // alertRandom();
 
 
+
+
+
 /*********************** Exercise 4 ********************* */
 
 // Declare a function that prompts the user's for their favorite drink and logs the following phrase to the console. "Your favorite drink is ________."
 
 
 function myFunciton1() {
-let text;
 let drink = prompt('What is your favorite drink?');
 console.log('Your favorite drink is ' + drink + '.');
 }
