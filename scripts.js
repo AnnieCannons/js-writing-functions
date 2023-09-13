@@ -20,17 +20,23 @@
 //     alert("Hello");
 // }
 
-function sayHello() {alert("Hello")};
+function sayHello() {
+  alert("Hello")
+};
 
 // function sayHello (
 //   alert("Hello");
 // )
-function sayHello() {alert("Hello")};
+function sayHello() {
+  alert("Hello")
+};
 
 // function sayHello {
 //     alert("Hello");
 // }
-function sayHello() {alert("Hello")};
+function sayHello() {
+  alert("Hello")
+};
 
 //sayHello();
 
@@ -51,8 +57,10 @@ function alertRandom() {
 
 // Declare a function that prompts the user's for their favorite drink and logs the following phrase to the console. "Your favorite drink is ________."
 
-function userFavoriteDrink() {let favoriteDrink = prompt("What is your favorite drink?"); 
-console.log("Your favorite drink is " + favoriteDrink);};
+function userFavoriteDrink() {
+  let favoriteDrink = prompt("What is your favorite drink?"); 
+console.log("Your favorite drink is " + favoriteDrink);
+};
 
 //userFavoriteDrink();
 
@@ -77,7 +85,8 @@ let user = {
 // Declare a function that creates an alert that says, "Welcome, Trinity! You know JavaScript, Python, and Ruby."
 // Make sure not to use the literal string "Trinity" or the words in the `languages` array.
 
-function userWelcome() {alert("Welcome, " + user.fullName.slice(0, 7) + "! You know " + user.languages[0] + ", " + user.languages[1] + ", and " + user.languages[2] + ".")};
+function userWelcome() {
+  alert("Welcome, " + user.fullName.slice(0, 7) + "! You know " + user.languages[0] + ", " + user.languages[1] + ", and " + user.languages[2] + ".")};
 
 //userWelcome();
 
@@ -115,9 +124,11 @@ let todaysDate = new Date();
 let todaysYear = todaysDate.getFullYear();
 let age = todaysYear - Number(birthYear);
 
-function userAgeMessage() {birthYear = prompt("Enter year of birth."); 
+function userAgeMessage() {
+  birthYear = prompt("Enter year of birth."); 
 age = todaysYear - parseFloat(birthYear);
-alert("Your approximate age is " + age)};
+alert("Your approximate age is " + age)
+};
 
 //userAgeMessage();
 
