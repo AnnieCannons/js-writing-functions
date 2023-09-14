@@ -66,12 +66,19 @@ let user = {
 // Declare a function that creates an alert that says, "Welcome, Trinity! You know JavaScript, Python, and Ruby."
 // Make sure not to use the literal string "Trinity" or the words in the `languages` array.
 
-function welcomeUser(){
-  alert("Welcome " + user.fullName.slice(0,7) + "! You know " + user.languages[0] + ", " + user.languages[1] + ", and " + user.languages[2] + ".");
+// function welcomeUser(){
+//   alert("Welcome " + user.fullName.slice(0,7) + "! You know " + user.languages[0] + ", " + user.languages[1] + ", and " + user.languages[2] + ".");
+// }
+// // Execute the function.
+// console.log(welcomeUser())
+function welcomeUser(user) {
+  let userName = user.fullName.split(" ")[0];
+  let languages = user.languages.join(", ");
+  alert("Welcome, " + userName + "! You know " + languages + ".");
 }
-// Execute the function.
-console.log(welcomeUser())
 
+welcomeUser(user);
+console.log(welcomeUser(user));
 
 // Below, NOT in a function, change the object's properties in these ways:
 // 1. The name should be "Kristal Thomas".
@@ -80,13 +87,13 @@ user.fullName = "Kristal Thomas";
 console.log(user.fullName)
 
 user.languages[1] = "Racket";
-console.log(welcomeUser())
+console.log(user.languages)
 
 // Execute the function again, and you should see a different message printed than the first time, with a different name and a different second language listed.
-
-
 //Feel free to comment out the function calls once you've confirmed they work.
 
+//Comments from Laura 
+//If a new object was passed into the function, and the user's name was not 7 characters long, what would happen? What can you update in the code to ensure that all names will work
 
 /*********************** Exercise 6 ********************* */
 
@@ -118,7 +125,20 @@ userBirthYear()
 // Declare a function that prompts the user for the following things: age, favoriteColor, favoriteYour.
 // Inside the function, create an object to store the user's responses.
 // Inside the function, log the following sentence to the console with the user's responses: "Your age is ____, your favorite color is ______, and your favorite movie is ______".
+function userPrompt() {
+  let userAgePrompt = prompt ("What is your age?");
+  let userFavColor = prompt ("What is your favorite color?");
+  let userFavMovie = prompt ('What is your favorite movie?');
 
+  let userInfo = {
+    userAge: userAgePrompt,
+    userColor: userFavColor,
+    userMovie: userFavMovie,
+  }
+  
+  console.log(`Your age is ${userAgePrompt}, your favorite color is ${userFavColor}, and your favorite movie is ${userFavMovie}.`);
+} 
+userPrompt();
 // Execute the function
 
 /*********************** Exercise 8 ********************* */
