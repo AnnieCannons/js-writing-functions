@@ -144,5 +144,11 @@ userPrompt();
 /*********************** Exercise 8 ********************* */
 
 // Declare a function that prompts the user for two numbers. Add the two numbers together and log the result to the console.
-
+function userNumbers() {
+  let num1 = prompt("Enter a number:");
+  let num2 = prompt("Enter a second number:");
+  let sum = Number(num1) + Number(num2);
+  console.log("The sum is: " + sum);
+}
 // Execute the function three times.
+userNumbers();
