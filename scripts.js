@@ -130,14 +130,13 @@ Welcome, ${firstName}! You know ${user.languages.join(', ')}.`)
 
 // You can use the following code in your function to calculate the user's approximate age:
 
-let birthYear;
+function myFunction6 () {
+
+let birthYear = prompt('What is your birth year?');
+  
 let todaysDate = new Date();
 let todaysYear = todaysDate.getFullYear();
 let age = todaysYear - Number(birthYear);
-
-function myFunction6 () {
-
-birthYear = prompt('What is your birth year?');
 
 console.log('Your approximate age is ' + age + '.' );
 }
