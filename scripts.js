@@ -138,7 +138,9 @@ let todaysDate = new Date();
 let todaysYear = todaysDate.getFullYear();
 let age = todaysYear - Number(birthYear);
 
-console.log('Your approximate age is ' + age + '.' );
+console.log(`
+Exercise 6:
+Your approximate age is ${age}`);
 }
 
 // Execute the function. Feel free to comment it out once you've confirmed it works.
@@ -163,7 +165,12 @@ userColor:  color,
 userMovie: movie,
 }
 
-console.log('Your age is ' + userResponse.userAge + ', your favorite color is ' + userResponse.userColor + ', and your favorite movie is ' + userResponse.userMovie + '.');
+console.log(`
+Exercise 7:
+Your age is ${userResponse.userAge}
+Your favorite color is ${userResponse.userColor}
+&
+Your favorite movie is ${userResponse.userMovie}`);
 }
 
 
@@ -179,9 +186,12 @@ function myFunction8 () {
 
   let total = Number(numb[0]) + Number(numb[1]);
 
-  console.log('Total value is: ' + total);
+  console.log(`
+Exercise 8: 
+Your total is: ${total}
+
+The .map method applies whatever code is written to every variable within the array its referencing`);
 
 }
-
 
 // Execute the function three times.
