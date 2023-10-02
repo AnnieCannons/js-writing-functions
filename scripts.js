@@ -1,9 +1,15 @@
 /*********************** Exercise 1 ********************* */
-
 // Navigate to your Github profile page
 // Identify as many different pieces of functionality that likely use functions.
 
 // List the functions here:
+
+function myFunction1() {
+console.log(`Exercise 1:
+The different navigation sections likely have a function that says if this button is clicked, open this file.
+
+The edit profile section has a function that says when edit profile is clicked, open this form with input boxes and save that is inputted if they click save and open the profile page again.`)
+}
 
 /*********************** Exercise 2 ********************* */
 // Fix each function's syntax so that it will correctly run the code in the code block.
@@ -14,33 +20,54 @@
 // 2. Fix the function so that it no longer gives you an error.
 // 3. Repeat.
 
-// let function  = sayHello() {
-//     alert("Hello");
-// }
+function sayHello() {
+    alert("Hello");
+}
 
-// function sayHello (
-//   alert("Hello");
-// )
+ function sayHello () { 
+alert("Hello");
+ }
 
-// function sayHello {
-//     alert("Hello");
-// }
+function sayHello () {
+alert("Hello");
+}
+
+function myFunction2() {
+console.log(`
+Exercise 2 is updated in the scripts.js file`)
+}
 
 /*********************** Exercise 3 ********************* */
 // Call the following function so that a random number is alerted in the browser.
 // If you don't want to keep getting alerts in this assignment,
 // then once you've confirmed it works, feel free to comment the function call.
 
-function alertRandom() {
-  let randomNumber = Math.floor(Math.random() * 6) + 1;
-  alert(randomNumber);
-}
+
+
+// alertRandom();
+
+function myFunction3() {
+    let randomNumber = Math.floor(Math.random() * 6) + 1;
+    alert(randomNumber);
+    
+    console.log(`
+Exercise 3: 
+Random number alerted: ${randomNumber}.`)
+  }
 
 /*********************** Exercise 4 ********************* */
 
 // Declare a function that prompts the user's for their favorite drink and logs the following phrase to the console. "Your favorite drink is ________."
 
 
+function myFunction4() {
+
+let drink = prompt('What is your favorite drink?');
+
+console.log(`
+Exercise 4:
+Your favorite drink is: ${drink}.`);
+}
 
 
 // Execute the function so that you see "Your favorite drink is [whatever you typed in the prompt]." in the console.
@@ -50,12 +77,26 @@ function alertRandom() {
 
 
 /*********************** Exercise 5 ********************* */
-
 let user = {
   id: 32,
   fullName: "Trinity Armstead",
   languages: ["JavaScript", "Python", "Ruby"],
 };
+
+
+function myFunction5 () {
+
+let name = user.fullName.split(' ');
+
+let firstName = name[0];
+
+text = alert(`Welcome, ${firstName}! You know ${user.languages.join(', ')}.`)
+
+console.log(`
+Exercise 5:
+Welcome, ${firstName}! You know ${user.languages.join(', ')}.`)
+
+}
 
 // Declare a function that creates an alert that says, "Welcome, Trinity! You know JavaScript, Python, and Ruby."
 // Make sure not to use the literal string "Trinity" or the words in the `languages` array.
@@ -68,6 +109,10 @@ let user = {
 // Below, NOT in a function, change the object's properties in these ways:
 // 1. The name should be "Kristal Thomas".
 // 2. The second language should be `Racket`.
+
+
+// user.fullName = 'Kristal Thomas';
+// user.languages[1] = 'Racket';
 
 
 // Execute the function again, and you should see a different message printed than the first time, with a different name and a different second language listed.
@@ -85,11 +130,18 @@ let user = {
 
 // You can use the following code in your function to calculate the user's approximate age:
 
-let birthYear;
+function myFunction6 () {
+
+let birthYear = prompt('What is your birth year?');
+  
 let todaysDate = new Date();
 let todaysYear = todaysDate.getFullYear();
 let age = todaysYear - Number(birthYear);
 
+console.log(`
+Exercise 6:
+Your approximate age is ${age}`);
+}
 
 // Execute the function. Feel free to comment it out once you've confirmed it works.
 
@@ -101,10 +153,45 @@ let age = todaysYear - Number(birthYear);
 // Inside the function, create an object to store the user's responses.
 // Inside the function, log the following sentence to the console with the user's responses: "Your age is ____, your favorite color is ______, and your favorite movie is ______".
 
+function myFunction7 () {
+
+let age = prompt('What is your age?');
+let color = prompt('What is your favorite color?');
+let movie = prompt('What is your favorite movie?');
+
+let userResponse = {
+userAge: age,
+userColor:  color,
+userMovie: movie,
+}
+
+console.log(`
+Exercise 7:
+Your age is ${userResponse.userAge}
+Your favorite color is ${userResponse.userColor}
+&
+Your favorite movie is ${userResponse.userMovie}`);
+}
+
+
 // Execute the function
 
 /*********************** Exercise 8 ********************* */
 
 // Declare a function that prompts the user for two numbers. Add the two numbers together and log the result to the console.
+
+function myFunction8 () {
+
+  let numb = prompt('Please submit two separate numbers (example: 12 5)').split(' ');
+
+  let total = Number(numb[0]) + Number(numb[1]);
+
+  console.log(`
+Exercise 8: 
+Your total is: ${total}
+
+The .map method applies whatever code is written to every variable within the array its referencing`);
+
+}
 
 // Execute the function three times.
