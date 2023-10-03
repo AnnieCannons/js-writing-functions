@@ -48,7 +48,7 @@ sayHello();
 
 
 let sayBye  = function() {
-  console.log("Always nice to see you!");
+  console.log("It's always nice seeing you!");
   alert("It was good seeing you !");
 }
 
