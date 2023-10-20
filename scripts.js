@@ -42,10 +42,10 @@ function alertRandom() {
 // Declare a function that prompts the user's for their favorite drink and logs the following phrase to the console. "Your favorite drink is ________."
 
 function favDrinkData() {
- prompt( "Your Favorite Drink is_______?" )
- console.log (favDrinkData)
+ let favDrink = prompt( "Your Favorite Drink is_______?" )
+ console.log (`your favorite drink is ${favDrink}.`)
 }
-//  favDrinkData()
+ favDrinkData()
 
 
 // Execute the function so that you see "Your favorite drink is [whatever you typed in the prompt]." in the console.
@@ -65,24 +65,24 @@ let user = {
 // Declare a function that creates an alert that says, "Welcome, Trinity! You know JavaScript, Python, and Ruby."
 // Make sure not to use the literal string "Trinity" or the words in the `languages` array.
 
-// function Welcome (){
-  // alert(user.fullName.slice(0,8)+ "!  You know " + user.languages +".")
+function Welcome (){
+  console.log(user.fullName.slice(0,8)+ "!  You know " + user.languages +".")
 
-  // console.log(Welcome)
-// }
+  
+}
 // Execute the function.
 
-// Welcome()
+Welcome()
 
 // Below, NOT in a function, change the object's properties in these ways:
 // 1. The name should be "Kristal Thomas".
 // 2. The second language should be `Racket`.
 user.fullName = "Kristal Thomas"
-user.languages.push("Racket")
+user.languages[1]='Racket'
 
 
 // Execute the function again, and you should see a different message printed than the first time, with a different name and a different second language listed.
-  // Welcome()
+  Welcome(user)
 
 //Feel free to comment out the function calls once you've confirmed they work.
 
@@ -117,11 +117,29 @@ birthday()
 // Declare a function that prompts the user for the following things: age, favoriteColor, favoriteYour.
 // Inside the function, create an object to store the user's responses.
 // Inside the function, log the following sentence to the console with the user's responses: "Your age is ____, your favorite color is ______, and your favorite movie is ______".
+function getUserPreferences(){
+  let age = prompt('what is your age?');
+  let favoriteColor = prompt('what is your favorite color?')
+  let favMovie = prompt('Whats your favorite movie ?')
+  let userPreferences ={
+    age:age,
+    favoriteColor:favoriteColor,
+    favoriteMovie:favMovie,
 
+  };
+  console.log(`your age is ${userPreferences.age}, your favorite corlor is ${userPreferences.favoriteColor} and your favorite movie is ${userPreferences.favoriteMovie}.`)
+}
 // Execute the function
-
+getUserPreferences()
 /*********************** Exercise 8 ********************* */
 
 // Declare a function that prompts the user for two numbers. Add the two numbers together and log the result to the console.
-
+function doMath(){
+  let num1= prompt('give a number .')
+  let num2 = prompt('give me another number.')
+  return num1 + num2 
+}
 // Execute the function three times.
+let result1 = doMath()
+let result2 = doMath()
+let result3 = doMath()
