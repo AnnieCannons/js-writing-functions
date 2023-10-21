@@ -4,7 +4,9 @@
 // Identify as many different pieces of functionality that likely use functions.
 
 // List the functions here:
-
+// the menu button that navigates to other place on get hub
+// the fork button 
+// the search bar to look some one or a add on 
 /*********************** Exercise 2 ********************* */
 // Fix each function's syntax so that it will correctly run the code in the code block.
 
