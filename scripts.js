@@ -123,11 +123,28 @@ alert("Your approximate age is " + age)
 // Inside the function, create an object to store the user's responses.
 // Inside the function, log the following sentence to the console with the user's responses: "Your age is ____, your favorite color is ______, and your favorite movie is ______".
 
-
+function getUserInfo() {
+  let userInfo = {};
+  userInfo.age = prompt("What is your age?");
+  userInfo.favoriteColor = prompt("What is your favorite color?");
+  userInfo.favoriteMovie = prompt("What is your favorite movie?");
+  console.log(`Your age is ${userInfo.age}, your favorite color is ${userInfo.favoriteColor}, and your favorite movie is ${userInfo.favoriteMovie}`);
+}
 // Execute the function
+getUserInfo();
 
 /*********************** Exercise 8 ********************* */
 
 // Declare a function that prompts the user for two numbers. Add the two numbers together and log the result to the console.
+function addNumbers() {
+  let num1 = prompt("Enter first number: ");
+  let num2 = prompt("Enter second number: ");
+  let sum = parseInt(num1) + parseInt(num2);
+  console.log("The sum of " + num1 + " and " + num2 + " is " + sum);
+}
 
 // Execute the function three times.
+addNumbers();
+addNumbers();
+addNumbers();
+
