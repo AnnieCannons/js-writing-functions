@@ -45,17 +45,18 @@
 
 // Declare a function that prompts the user's for their favorite drink and logs the following phrase to the console. "Your favorite drink is ________."
 
-//function favoriteDrinkQuestion() {
-  //const answer = prompt("What is your favorite drink");
-  //return answer;
-//};
-//const favoriteDrink = favoriteDrinkQuestion();
-//console.log("Your favorite drink is " + favoriteDrink);
+// function favoriteDrinkQuestion() {
+//   const answer = prompt("What is your favorite drink");
+//   console.log("Your favorite drink is " + answer);
+// };
+
+
+
 
 // Execute the function so that you see "Your favorite drink is [whatever you typed in the prompt]." in the console.
 // Feel free to comment out the execution line after you're done, so you don't keep getting prompted.
 
-
+// favoriteDrinkQuestion();
 
 
 /*********************** Exercise 5 ********************* */
@@ -68,19 +69,23 @@ let user = {
 
 // Declare a function that creates an alert that says, "Welcome, Trinity! You know JavaScript, Python, and Ruby."
 // Make sure not to use the literal string "Trinity" or the words in the `languages` array.
+function userWelcome() {
+  alert("Welcome, " + user.fullName.slice(0, 7) + "! You know " + user.languages[0] + ", " + user.languages[1] + ", and " + user.languages[2] + ".")};
+
 
 
 // Execute the function.
-
+userWelcome();
 
 
 // Below, NOT in a function, change the object's properties in these ways:
 // 1. The name should be "Kristal Thomas".
 // 2. The second language should be `Racket`.
-
+user.fullName = "Kristal Thomas";
+user.languages[1] = "Racket";
 
 // Execute the function again, and you should see a different message printed than the first time, with a different name and a different second language listed.
-
+userWelcome();
 
 //Feel free to comment out the function calls once you've confirmed they work.
 
@@ -99,16 +104,25 @@ let todaysDate = new Date();
 let todaysYear = todaysDate.getFullYear();
 let age = todaysYear - Number(birthYear);
 
+function userAgeMessage() {
+  birthYear = prompt("Enter year of birth."); 
+age = todaysYear - parseFloat(birthYear);
+alert("Your approximate age is " + age)
+};
 
 // Execute the function. Feel free to comment it out once you've confirmed it works.
+//userAgeMessage();
 
 
 
+
+// These were bonus ones though? right?
 /*********************** Exercise 7 ********************* */
 
 // Declare a function that prompts the user for the following things: age, favoriteColor, favoriteYour.
 // Inside the function, create an object to store the user's responses.
 // Inside the function, log the following sentence to the console with the user's responses: "Your age is ____, your favorite color is ______, and your favorite movie is ______".
+
 
 // Execute the function
 
