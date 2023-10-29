@@ -158,13 +158,13 @@ let user = {
 
 // Declare a function that creates an alert that says, "Welcome, Trinity! You know JavaScript, Python, and Ruby."
 // Make sure not to use the literal string "Trinity" or the words in the `languages` array.
-function userWelcome() {
-  console.log("Welcome " + user.fullName.slice(0, 7) + ", " + " You know " + user.languages[0] + ", " + user.languages[1] + ", and " + user.languages[2] + ".")
-  alert("Welcome " + user.fullName.slice(0, 7) + ", " + " You know " + user.languages[0] + ", " + user.languages[1] + ", and " + user.languages[2] + ".")};
+function userWelcome(user) {
+  let languagesList = user.languages.join(", and ");
+  alert("Welcome, " + user.fullName + "! You know " + languagesList + ".");
+};
  
-
 // Execute the function.
-userWelcome();
+userWelcome(user);
 
 
 // Below, NOT in a function, change the object's properties in these ways:
@@ -176,7 +176,7 @@ user.languages[1] = "Racket";
 
 
 // Execute the function again, and you should see a different message printed than the first time, with a different name and a different second language listed.
-userWelcome();
+userWelcome(user);
 
 
 //Feel free to comment out the function calls once you've confirmed they work.
