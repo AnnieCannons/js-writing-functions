@@ -2,8 +2,11 @@
 
 // Navigate to your Github profile page
 // Identify as many different pieces of functionality that likely use functions.
+folk,filter,latest,changes,create,repository;
 
 // List the functions here:
+
+//folk helps copy information/document to personalprofile;
 
 /*********************** Exercise 2 ********************* */
 // Fix each function's syntax so that it will correctly run the code in the code block.
@@ -11,20 +14,18 @@
 // Suggested workflow:
 
 // 1. Uncomment a function—that is, remove the `//` from the start of each of its lines. (Command-/ will toggle commenting on and off in VS Code!)
-// 2. Fix the function so that it no longer gives you an error.
+//2. Fix the function so that it no longer gives you an error.
 // 3. Repeat.
 
-// let function  = sayHello() {
-//     alert("Hello");
-// }
+ function sayHello() { alert("Hello");
+ }
 
-// function sayHello (
-//   alert("Hello");
-// )
-
-// function sayHello {
-//     alert("Hello");
-// }
+function sayHello (
+   alert ("Hello");
+ )
+ function sayHello {
+     alert("Hello");
+ }
 
 /*********************** Exercise 3 ********************* */
 // Call the following function so that a random number is alerted in the browser.
@@ -40,14 +41,14 @@ function alertRandom() {
 
 // Declare a function that prompts the user's for their favorite drink and logs the following phrase to the console. "Your favorite drink is ________."
 
-
-
-
 // Execute the function so that you see "Your favorite drink is [whatever you typed in the prompt]." in the console.
 // Feel free to comment out the execution line after you're done, so you don't keep getting prompted.
 
 
-
+function favoriteDrink() {
+  let drink = prompt("What is your favorite drink?");
+  console.log(`Your favorite drink is ${drink}.`);
+}
 
 /*********************** Exercise 5 ********************* */
 
@@ -60,6 +61,10 @@ let user = {
 // Declare a function that creates an alert that says, "Welcome, Trinity! You know JavaScript, Python, and Ruby."
 // Make sure not to use the literal string "Trinity" or the words in the `languages` array.
 
+function welcomeUser(user) {
+  let languagesString = user.languages.join(", ");
+  alert(`Welcome, ${user.fullName}! You know ${languagesString}.`);
+}
 
 // Execute the function.
 
@@ -69,6 +74,9 @@ let user = {
 // 1. The name should be "Kristal Thomas".
 // 2. The second language should be `Racket`.
 
+
+user.fullName = "Kristal Thomas";
+user.languages[1] = "Racket";
 
 // Execute the function again, and you should see a different message printed than the first time, with a different name and a different second language listed.
 
@@ -101,10 +109,23 @@ let age = todaysYear - Number(birthYear);
 // Inside the function, create an object to store the user's responses.
 // Inside the function, log the following sentence to the console with the user's responses: "Your age is ____, your favorite color is ______, and your favorite movie is ______".
 
+function userResponses() {
+  let age = prompt("What is your age?");
+  let favoriteColor = prompt("What is your favorite color?");
+  let favoriteMovie = prompt("What is your favorite movie?");
+  let userObject = {
+    age: age,
+    favoriteColor: favoriteColor,
+    favoriteMovie: favoriteMovie,
+  };
 // Execute the function
+
+console.log(`Your age is ${age}, your favorite color is ${favoriteColor}, and your favorite movie is ${favoriteMovie}.`);
+}
 
 /*********************** Exercise 8 ********************* */
 
 // Declare a function that prompts the user for two numbers. Add the two numbers together and log the result to the console.
 
 // Execute the function three times.
+
